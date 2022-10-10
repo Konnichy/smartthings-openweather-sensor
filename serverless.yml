@@ -1,0 +1,27 @@
+service: openweather-sensor
+
+frameworkVersion: "3"
+
+package:
+  patterns:
+    - index.js
+    - smartapp.js
+    - openweather.js
+    - 'locales/**'
+    - '!.git/**'
+    - '!.gitignore'
+    - '!server.js'
+
+provider:
+  name: aws
+  runtime: nodejs14.x
+  stage: dev
+
+  # replace with closest region to your geographic location for ideal latency
+  # see: https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints
+  region: eu-west-3
+
+functions:
+  smartapp:
+    handler: index.handle
+    timeout: 10

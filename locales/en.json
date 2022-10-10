@@ -1,0 +1,16 @@
+{
+	"pages.mainPage.name": "OpenWeather sensor",
+	"pages.mainPage.sections.mainSection.name": "Settings",
+	"pages.mainPage.settings.location.name": "Location",
+	"pages.mainPage.settings.location.description": "City, Country/State",
+	"pages.mainPage.settings.units.name": "What unit system do you use?",
+	"pages.mainPage.settings.units.options.metric.name": "Metric",
+	"pages.mainPage.settings.units.options.imperial.name": "Imperial",
+	"pages.mainPage.settings.apikey.name": "API key",
+	"pages.mainPage.settings.scheduleInterval.name": "Update period",
+	"pages.mainPage.settings.scheduleInterval.options.never.name": "Never",
+	"pages.mainPage.settings.scheduleInterval.options.1min.name": "1 minute",
+	"pages.mainPage.settings.scheduleInterval.options.15min.name": "15 minutes",
+	"pages.mainPage.settings.scheduleInterval.options.30min.name": "30 minutes",
+	"pages.mainPage.settings.scheduleInterval.options.1h.name": "1 hour"
+}

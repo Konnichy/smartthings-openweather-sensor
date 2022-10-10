@@ -1,0 +1,33 @@
+{
+  "name": "openweather-sensor",
+  "version": "1.0.0",
+  "description": "Adds a virtual sensor displaying OpenWeather data",
+  "repository": "https://github.com/Konnichy/smartthings-openweather-sensor",
+  "main": "server.js",
+  "ava": {
+    "files": [
+      "./**/*.spec.js"
+    ],
+    "failFast": true
+  },
+  "scripts": {
+    "test": "NODE_ENV=test ava --verbose",
+    "start": "node server.js"
+  },
+  "author": "Konnichy",
+  "license": "Apache-2.0",
+  "dependencies": {
+    "@smartthings/smartapp": "^2.6.1",
+    "axios": "^0.21.4",
+    "dotenv": "^10.0.0",
+    "prettyjson": "^1.2.5"
+  },
+  "devDependencies": {
+    "ava": "^4.0.1",
+    "express": "^4.17.2",
+    "serverless": "^3.2.1"
+  },
+  "engines": {
+    "node": "^14"
+  }
+}
