@@ -1,0 +1,14 @@
+{
+	"folders": [
+		{
+			"path": "../smartthings-core-sdk"
+		},
+		{
+			"path": "../smartapp-sdk-nodejs"
+		},
+		{
+			"path": "."
+		}
+	],
+	"settings": {}
+}
