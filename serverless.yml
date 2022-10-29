@@ -14,7 +14,7 @@ package:
 
 provider:
   name: aws
-  runtime: nodejs14.x
+  runtime: nodejs16.x
   stage: dev
 
   # replace with closest region to your geographic location for ideal latency
@@ -23,5 +23,5 @@ provider:
 
 functions:
   smartapp:
-    handler: index.handle
+    handler: index.handler
     timeout: 10
