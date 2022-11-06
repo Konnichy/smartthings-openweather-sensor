@@ -1,0 +1,18 @@
+name: OpenWeather sensor
+metadata:
+  deviceType: Thermostat
+  deviceTypeId: Thermostat
+  ocfDeviceType: oic.d.thermostat
+  ocfSpecVer: core 1.1.0
+components:
+  - id: main
+    capabilities:
+      - id: temperatureMeasurement
+      - id: relativeHumidityMeasurement
+      - id: momentary
+view:
+  dashboard:
+    states:
+      - capability: temperatureMeasurement
+    actions:
+      - capability: momentary
