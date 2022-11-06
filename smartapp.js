@@ -1,6 +1,8 @@
 const SmartApp = require('@smartthings/smartapp');
 const openweather = require('./openweather');
 
+const DEVICE_PROFILE_ID = '8700c22c-f463-4d35-b0ea-c0dd7f43e9c2';
+
 async function subscribeToPeriodicRefreshes(context) {
     const scheduleInterval = context.configStringValue('scheduleInterval');
 
@@ -126,7 +128,6 @@ module.exports = new SmartApp()
             section.enumSetting('scheduleInterval')
                 .options([
                     { name: "never", id: "never" },
-                    { name: "1min",  id: "1"     },  // TODO: Remove this option after testing is complete
                     { name: "15min", id: "15"    },
                     { name: "30min", id: "30"    },
                     { name: "1h",    id: "0"     }
@@ -144,7 +145,7 @@ module.exports = new SmartApp()
             // It is recommended to use a PUBLISHED device
             // profile. To do so, configure SmartThings CLI
             // and use `deviceprofiles:publish` interface.
-            profileId: '8700c22c-f463-4d35-b0ea-c0dd7f43e9c2',  // could be moved outside of 'app', to test
+            profileId: DEVICE_PROFILE_ID
         };
         const device = await context.api.devices.create(deviceDefinition);
 
